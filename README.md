@@ -26,7 +26,6 @@ __________________
   "devDependencies": {
     "@2fd/graphdoc": "2.4.0",
     "graphdoc-plugin-flexible": "1.0.0",
-    ..
 ```
 
 2 . Configure `graphdoc-plugin-flexible`, e.g. without `navigation.schema` plugin:
@@ -121,7 +120,7 @@ __________________
       "documents": false,
       "assets": false
     },
-    "document.require-by": {
+    "document.require": {
       "disable": true,
       "navigations": false,
       "documents": false,
@@ -142,7 +141,7 @@ The plugins provided by [`graphdoc`](https://www.npmjs.com/package/@2fd/graphdoc
 * `navigation.input`: Generates navigations for GraphQL input types.
 * `navigation.directive`: Generates navigations for GraphQL directives.
 * `document.schema`: Generates the HTML "Definition" section for any GraphQL element.
-* `document.require-by`: Generates HTML "Required By" section for any GraphQL element.
+* `document.require`: Generates HTML "Required By" section for any GraphQL element.
 
 The following shows the sections worked by the [`graphdoc`](https://www.npmjs.com/package/@2fd/graphdoc) plugins, using the example created by [`graphdoc`](https://www.npmjs.com/package/@2fd/graphdoc), [Pokemon GraphQL](https://2fd.github.io/graphdoc/pokemon/pokemonattack.doc.html):
 
