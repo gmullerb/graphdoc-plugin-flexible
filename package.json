@@ -1,7 +1,7 @@
 {
   "name": "graphdoc-plugin-flexible",
-  "description": "Flexible graphdoc for the GraphQL documentation",
-  "version": "1.0.1",
+  "description": "GraphQL documentation with Flexible graphdoc",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Gonzalo Müller Bravo",
   "main": "lib/index.js",
@@ -24,6 +24,8 @@
     "comments",
     "graphdoc",
     "graphdoc-plugin",
+    "flexible",
+    "optional",
     "plugin",
     "schema",
     "config",

@@ -3,7 +3,7 @@
   <a href="https://graphdoc-plugins.github.io"><img src="docs/graphdoc-plugin-flexible.png" alt=" "/></a>
 </p>
 
-<h1 align="center">Flexible graphdoc for the GraphQL documentation</h1>
+<h1 align="center">GraphQL documentation with Flexible graphdoc</h1>
 
 [![graphdoc-plugin-flexible](https://badgen.net/badge/homepage/graphdoc-plugin-flexible/blue)](https://graphdoc-plugins.github.io)
 [![graphdoc-plugin-flexible](https://badgen.net/badge/npm%20pack/graphdoc-plugin-flexible/blue)](https://www.npmjs.com/package/graphdoc-plugin-flexible)
@@ -13,6 +13,7 @@
 [![ ](https://gitlab.com/gmullerb/graphdoc-plugin-flexible/badges/master/coverage.svg)](https://gmullerb.gitlab.io/graphdoc-plugin-flexible/coverage/index.html)
 [![Github repo](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/gmullerb/graphdoc-plugin-flexible)
 [![Gitlab repo](https://badgen.net/badge/icon/gitlab?icon=gitlab&label)](https://gitlab.com/gmullerb/graphdoc-plugin-flexible)
+
 __________________
 
 ## Quick Start
@@ -22,10 +23,9 @@ __________________
 `package.json`:
 
 ```json
-  ..
   "devDependencies": {
     "@2fd/graphdoc": "2.4.0",
-    "graphdoc-plugin-flexible": "1.0.0",
+    "graphdoc-plugin-flexible": "1.0.2",
 ```
 
 2 . Configure `graphdoc-plugin-flexible`, e.g. without `navigation.schema` plugin:
@@ -46,11 +46,15 @@ __________________
 
 `package.json`:
 
-```sh
-  graphdoc -p graphdoc/../../graphdoc-plugin-flexible -s ./schema.GraphQL -o ./build/documentation
+```json
+  "scripts": {
+    "doc": "graphdoc -p graphdoc/../../graphdoc-plugin-flexible -s ./schema.graphql -o ./build/documentation"
+  }
 ```
 
+> **When using `graphdoc-plugin-flexible`, the graphdoc plugins must NOT be used**, it will duplicate outputs.  
 > `graphdoc/../../` this is required to get external plugins working in `graphdoc`.
+
 __________________
 
 ## Goals
@@ -164,17 +168,24 @@ __________________
 
 __________________
 
+## Documentation
+
+* [Main documentation](https://graphdoc-plugins.github.io/docs/graphdoc-plugin-flexible.html).
+
+* [`CHANGELOG`](CHANGELOG.html): contains the information about changes in each version, chronologically ordered ([Keep a Changelog](http://keepachangelog.com)).
+
 ## Contributing
 
 * **Use it**.
 * **Share it**.
-* [Give it a Star](https://github.com/gmullerb/eslint-plugin-regex).
-* [Propose changes or improvements](https://github.com/gmullerb/eslint-plugin-regex/issues).
-* [Report bugs](https://github.com/gmullerb/eslint-plugin-regex/issues).
+* [Give it a Star](https://github.com/gmullerb/graphdoc-plugin-flexible).
+* [Propose changes or improvements](https://github.com/gmullerb/graphdoc-plugin-flexible/issues).
+* [Report bugs](https://github.com/gmullerb/graphdoc-plugin-flexible/issues).
 
 ## License
 
 [MIT License](LICENSE.txt)
+
 __________________
 
 ## Remember
